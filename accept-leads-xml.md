@@ -6,7 +6,7 @@ This document provides instructions on implementing an XML feed that may be used
 
 Field   | Possible Values   | Lead Type   | Description     
 ------- | ----------------- | ----------- | --------------- 
-LoanPurpose | Refinance<br>Purchase | -- | The type of lead 
+LoanPurpose | refinance<br>purchase<br>reverse | -- | The type of lead 
 CreditRating | Excellent<br />Good<br />Fair<br />Poor | All | User's self-assessed credit
 DesiredRateType | 30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | All | Desired rate type
 RateType1 |  30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | Refinance | Existing rate type
@@ -27,12 +27,12 @@ LastName | text | All | Consumer's last name
 Email | text | All | Consumer's email
 CellPhone | text | All | Consumer's primary phone number
 HomePhone | text | All | Consumer's alternate phone number
-Street_Address | text | All | Consumer's street address
 PropertyCity | text | All | Consumer's city
 State | 2 letter state abbreviation | All | Consumer's state
 Zip | 5 digit zip code | All | Consumer's zip code
 rid | numeric | All | The lead's unique identifier
 ltv | numeric | All | total mortgage * (100 / property value)
+Age62orOlder | Yes<br />No | Reverse | At least one person on title is 62 or older in age
 
 ### Sample Feed
 ```
