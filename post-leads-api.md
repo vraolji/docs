@@ -12,7 +12,7 @@ https://api.freerateupdate.com/post/lead
 
 Field | Accepted Values | Required | Description
 ------| --------------- | -------- | -----------
-type | refinance<br>purchase | Yes | If the lead is purchase or refinance
+type | refinance<br>purchase<br>reverse | Yes | If the lead is purchase or refinance
 credit_rating | excellent<br>good<br>fair<br>poor | Yes | Self assessed credit rating
 property_type | single<br>multi<br>condo<br>town_house<br>cooperative | Yes | Type of property
 existing_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Refinance | Existing rate type
@@ -35,7 +35,6 @@ last_name | string | Yes | Consumer last name
 email | string | Yes | Consumer email address
 primary_phone | string | Yes | Consumer primary phone number
 secondary_phone | string | No | Consumer secondary phone number
-property_address | string | No | Street address of the property
 property_city | string | No | City of the property
 property_state | string | Yes | State of the property
 property_zip | string | Yes | Zip code of property
@@ -43,6 +42,7 @@ medium | string | Yes | The source this lead came from. i.e. Paid Advertising, E
 campaign | string | No | The name of the campaign used for the source
 universal_leadid | string | Yes | The ID acquired from LeadID
 api_key | string | Yes | Assigned API key
+Age62orOlder | Yes<br />No | Reverse | At least one person on title is 62 or older in age
 
 ### Response
 
